@@ -1,0 +1,86 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+    height: 560px;
+    border: solid aliceblue;
+}
+.grid div {
+    width: 176px;
+    height: 175px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.image-container {
+    margin-top: -10px;
+    margin-right: 32rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    transition: cubic-bezier(.07, 1.41, .85, 1.41) 10s;
+}
+.image-container img {
+    height: 7rem;
+}
+
+.empty-square {
+    background-color: brown;
+}
+
+.client-square {
+    background-color: rgb(255, 115, 0);
+}
+
+.machine-square {
+    background-color: rgb(37, 37, 37);
+}
+
+.icon {
+    cursor:pointer;
+}
+
+@media screen and (max-width: 541px) {
+    .grid {
+        width: 400px;
+        height: 400px;
+        padding-left: 3px;
+    }
+
+    .grid div {
+        width: 122px;
+        height: 122px;
+    }
+
+    .image-container {
+        margin-top: 1px;
+        margin-right: 25rem;
+    }
+}
+
+@media screen and (max-width: 360px) { /* CELLPHONE */
+    .grid {
+        width: 320px;
+        height: 320px;
+    }
+
+    .grid div {
+        width: 95px;
+        height: 95px;
+    }
+
+    .image-container {
+        margin-right: 14rem;
+    }
+
+    .title {
+        margin-top: 2rem;
+        margin-left: 8rem;
+        width: 220px;
+        height: 65px;
+
+    }
+    .title svg {
+        margin: 5px;
+    }
+}
